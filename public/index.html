@@ -102,8 +102,8 @@
         var clone = $('#template').find('.row:first').clone();
         $('#rows').append(clone);
       });
-      $('#submit-btn').click(function(){
-        $('#mail').submit()
+      $(window).bind('beforeunload', function(){
+        return 'You may have unsaved changes, are you sure you want to leave?';
       });
     </script>
   </body>

@@ -19,7 +19,6 @@ router.post('/submit', function(req, res, next){
   }, function(err, json) {
     if (err) return console.error(err);
 
-    console.log('Message sent: ' + info.response);
     res.sendStatus(200)
   });
 
